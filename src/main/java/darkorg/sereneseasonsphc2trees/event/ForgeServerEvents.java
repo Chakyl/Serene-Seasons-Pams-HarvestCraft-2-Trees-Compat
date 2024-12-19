@@ -17,7 +17,7 @@ import sereneseasons.config.FertilityConfig;
 import sereneseasons.init.ModFertility;
 import sereneseasons.init.ModTags;
 
-@Mod.EventBusSubscriber(modid = SereneSeasonsPHC2Trees.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.DEDICATED_SERVER)
+@Mod.EventBusSubscriber(modid = SereneSeasonsPHC2Trees.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.DEDICATED_SERVER)
 public class ForgeServerEvents {
     @SubscribeEvent
     public static void onSaplingGrowTreeEvent(SaplingGrowTreeEvent event) {
